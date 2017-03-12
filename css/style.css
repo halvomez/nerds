@@ -165,9 +165,10 @@ body {
 }
 
 .main-index__info {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 76px;
 }
 
 .main-index__aboutus {
@@ -178,6 +179,7 @@ body {
 }
 
 .main-index__aboutus--title {
+  margin-top: 35px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -190,8 +192,54 @@ body {
   text-transform: uppercase;
 }
 
-.main-index__project {
+.main-index__aboutus ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-index__rate {
   display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.main-index__rate>p {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rate-percent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rate-percent div {
+  width: 110px;
+}
+
+.rate-percent__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.rate-percent--sup {
+  vertical-align: super;
+  font-size: 28px;
+}
+
+.main-index__project {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -202,6 +250,10 @@ body {
 
 .main-index__map img {
   margin-left: -140px;
+}
+
+.main-index__map {
+  margin-top: 78px;
 }
 
 .main-index__where {
