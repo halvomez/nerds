@@ -16,6 +16,7 @@ body {
   outline: 1px solid red;
   display: flex; 
   align-items: center;
+  background-color: #eeeeee;
 }
 
 .main-header__logo {
@@ -48,9 +49,14 @@ body {
   outline: 2px solid red;
 }
 
+.main-index {
+  outline: 2px solid red;
+}
+
 .slider {
   display: flex; 
   justify-content: space-between;
+  background-color: #eeeeee;
 }
 
 .slider__right {
@@ -99,4 +105,28 @@ body {
   background-color: #ffffff;
   top: 54px;
   left: 0;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  outline: 2px solid red;
+}
+
+.main-footer__social ul {
+  
+display: flex;
+ padding: 0;
+ margin: 0;
+ list-style: none;
+ font-size: 0;
+ margin-right: 140px;
+}
+
+.main-footer__social a {
+  display: block;
+  width: 78px;
+  height: 78px;
+  border-radius: 50px;
+  background-color: #e1e1e1;
 }
