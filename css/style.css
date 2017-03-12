@@ -14,7 +14,7 @@ body {
   margin-top: 50px;
   min-height: 65px;
   outline: 1px solid red;
-  display: flex; 
+  display: flex;
   align-items: center;
   background-color: #eeeeee;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .slider {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   background-color: #eeeeee;
 }
@@ -62,7 +62,6 @@ body {
 .slider__right {
   margin-right: 30px;
 }
-
 
 .main-index__offer {
   display: flex;
@@ -94,7 +93,7 @@ body {
   position: relative;
 }
 
-.main-index__map img{
+.main-index__map img {
   margin-left: -140px;
 }
 
@@ -114,13 +113,12 @@ body {
 }
 
 .main-footer__social ul {
-  
-display: flex;
- padding: 0;
- margin: 0;
- list-style: none;
- font-size: 0;
- margin-right: 140px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+  margin-right: 140px;
 }
 
 .main-footer__social a {
