@@ -56,3 +56,15 @@ body {
 .slider__right {
   margin-right: 30px;
 }
+
+
+.main-index__offer {
+  display: flex;
+}
+
+.main-index__offer div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  margin-top: 82px;
+}
