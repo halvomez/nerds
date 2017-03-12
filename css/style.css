@@ -68,3 +68,18 @@ body {
   margin-right: 100px;
   margin-top: 82px;
 }
+
+.main-index__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-index__aboutus {
+  width: 660px;
+}
+
+.main-index__project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
