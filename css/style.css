@@ -83,3 +83,20 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+.main-index__map {
+  position: relative;
+}
+
+.main-index__map img{
+  margin-left: -140px;
+}
+
+.main-index__where {
+  position: absolute;
+  width: 320px;
+  min-height: 310px;
+  background-color: #ffffff;
+  top: 54px;
+  left: 0;
+}
