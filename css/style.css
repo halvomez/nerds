@@ -16,6 +16,7 @@ body {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .grey-wrapper {
@@ -23,10 +24,8 @@ body {
 }
 
 .main-header {
-  margin-top: 50px;
+  padding-top: 50px;
   min-height: 65px;
-  display: flex;
-  align-items: center;
 }
 
 .main-header__logo {
@@ -59,6 +58,7 @@ body {
 
 .main-header__basket {
   margin-left: auto;
+  
 }
 
 .main-header__basket a {
@@ -71,11 +71,7 @@ body {
 }
 
 .slider {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
   min-height: 415px;
-  background-color: #eeeeee;
   background-repeat: no-repeat;
 }
 
@@ -95,11 +91,12 @@ body {
 }
 
 .slider__promo {
+  margin: 0;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
   font-weight: 500;
-  margin-top: 70px;
+  padding-top: 70px;
   margin-bottom: 25px;
 }
 
@@ -275,7 +272,6 @@ body {
 .main-footer {
   display: flex;
   align-items: center;
-  outline: 2px solid red;
 }
 
 .main-footer__social ul {
