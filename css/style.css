@@ -14,12 +14,19 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.grey-wrapper {
+  background-color: #eeeeee;
+}
+
 .main-header {
   margin-top: 50px;
   min-height: 65px;
   display: flex;
   align-items: center;
-  background-color: #eeeeee;
 }
 
 .main-header__logo {
