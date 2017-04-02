@@ -327,11 +327,40 @@ body {
 
 .main-index__where {
   position: absolute;
-  width: 320px;
-  min-height: 310px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 55px;
   background-color: #ffffff;
   top: 54px;
   left: 0;
+}
+
+.main-index__where p:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
+
+.main-index__where p:nth-child(2) {
+  margin-bottom: 27px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.main-index__where p:nth-child(3) {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  margin-bottom: 37px;
+}
+
+.main-index__where a {
+  margin-bottom: 47px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .main-footer {
