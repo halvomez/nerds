@@ -366,6 +366,7 @@ body {
 .main-footer {
   display: flex;
   align-items: center;
+  min-height: 220px;
 }
 
 .main-footer__social ul {
@@ -378,9 +379,56 @@ body {
 }
 
 .main-footer__social a {
+  position: relative;
   display: block;
   width: 78px;
   height: 78px;
   border-radius: 50px;
   background-color: #e1e1e1;
+  margin-right: 14px;
+}
+
+.social--vk::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 15px;
+  top: 32px;
+  left: 25px;
+  background: url("../img/vk-icon.png") no-repeat;
+}
+
+.social--fb::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 22px;
+  top: 28px;
+  left: 32px;
+  background: url("../img/fb-icon.png") no-repeat;
+}
+
+.social--inst::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 21px;
+  top: 30px;
+  left: 28px;
+  background: url("../img/inst-icon.png") no-repeat;
+}
+
+.main-footer__discount {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.main-footer__promo {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }
