@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Магазин шаблонов</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grey-wrapper">
+      <header class="main-header">
+        <div class="center flex">
+          <div class="main-header__logo">
+            <img src="img/nerds-logo.png" alt="nerds_logo" width="160" height="65">
+          </div>
+          <nav class="main-header__nav">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-header__basket">
+            <a href="#">корзина</a>
+          </div>
+          
+        </div>
+        <h1 class="main-header__title">Магазин готовых шаблонов</h1>
+      </header>
+    </div>
+    <main class="main-catalog">
+        <aside class="filter">
+          <section class="range-select">
+              <p class="catalog__title">Стоимость</p>
+              <div class="range-block">
+                <div class="range-block__line">
+                    <div class="range-block__line--green"></div>
+                </div>
+              </div>
+              <div class="range-number">
+                  <label for="min-price">От</label>
+                  <input type="text" id="min-price" name="min-price" value="0">
+                  <label for="max-price">До</label>
+                  <input type="text" id="max-price" name="max-price" value="15000">
+              </div>
+          </section>
+          <section class="grid-select">
+              <input type="radio" id="grid-adaptive" name="grid-toggle" checked>
+              <label for="grid-adaptive">Адаптивная</label>
+              <input type="radio" id="grid-fixed" name="grid-toggle">
+              <label for="grid-fixed">Фиксированная</label>
+              <input type="radio" id="grid-flow" name="grid-toggle">
+              <label for="grid-flow">Резиновая</label>
+          </section>
+          <section class="feature-select">
+              <input type="checkbox" id="feature-slider" checked>
+              <label for="feature-slider">Слайдер</label>
+              <input type="checkbox" id="feature-point">
+              <label for="feature-point">Блок преимуществ</label>
+              <input type="checkbox" id="feature-news" checked>
+              <label for="feature-news">Новости</label>
+              <input type="checkbox" id="feature-gallery">
+              <label for="feature-gallery">Галерея</label>
+              <input type="checkbox" id="feature-basket">
+              <label for="feature-basket">Корзина</label>
+          </section>
+          <button class="flider-show btn btn--grey">Показать</button>
+        </aside>
+    </main>
+</body>
+</html>

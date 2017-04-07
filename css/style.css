@@ -439,3 +439,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/*стили для внутренней станицы"*/
+
+.main-header__title {
+  display: block;
+  text-align: center;
+  padding-bottom: 60px;
+}
