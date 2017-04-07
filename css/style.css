@@ -58,7 +58,6 @@ body {
 
 .main-header__basket {
   margin-left: auto;
-  
 }
 
 .main-header__basket a {
@@ -88,7 +87,9 @@ body {
   display: none;
 }
 
-.slider__btn {
+.slider__btn1,
+.slider__btn2,
+.slider__btn3 {
   position: relative;
   display: inline-block;
   vertical-align: baseline;
@@ -99,7 +100,9 @@ body {
   margin-right: 17px;
 }
 
-.slider__btn::before {
+.slider__btn1::before,
+.slider__btn2::before,
+.slider__btn3::before {
   content: "";
   position: absolute;
   box-sizing: border-box;
@@ -107,27 +110,32 @@ body {
   height: 8px;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
-  top:5px;
+  top: 5px;
   left: 5px;
+  display: none;
 }
 
- .slide1:checked ~ .slider-1 {
+.slide1:checked~.slider-1 {
   display: block;
 }
 
-.slide2:checked ~ .slider-2 {
+.slide2:checked~.slider-2 {
   display: block;
 }
 
-.slide3:checked ~ .slider-3 {
+.slide3:checked~.slider-3 {
   display: block;
 }
 
-.slide2:checked ~ .slider-2 {
+.slide1:checked~.slider .slider__btn1::before {
   display: block;
 }
 
-.slide3:checked ~ .slider-3 {
+.slide2:checked~.slider .slider__btn2::before {
+  display: block;
+}
+
+.slide3:checked~.slider .slider__btn3::before {
   display: block;
 }
 
@@ -309,6 +317,13 @@ body {
   position: relative;
 }
 
+.js-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -140px;
+}
+
 .main-index__map img {
   margin-left: -140px;
 }
@@ -319,16 +334,46 @@ body {
 
 .main-index__where {
   position: absolute;
-  width: 320px;
-  min-height: 310px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 55px;
   background-color: #ffffff;
   top: 54px;
   left: 0;
 }
 
+.main-index__where p:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
+
+.main-index__where p:nth-child(2) {
+  margin-bottom: 27px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.main-index__where p:nth-child(3) {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  margin-bottom: 37px;
+}
+
+.main-index__where a {
+  margin-bottom: 47px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
 .main-footer {
   display: flex;
   align-items: center;
+  min-height: 220px;
 }
 
 .main-footer__social ul {
@@ -341,9 +386,56 @@ body {
 }
 
 .main-footer__social a {
+  position: relative;
   display: block;
   width: 78px;
   height: 78px;
   border-radius: 50px;
   background-color: #e1e1e1;
+  margin-right: 14px;
+}
+
+.social--vk::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 15px;
+  top: 32px;
+  left: 25px;
+  background: url("../img/vk-icon.png") no-repeat;
+}
+
+.social--fb::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 22px;
+  top: 28px;
+  left: 33px;
+  background: url("../img/fb-icon.png") no-repeat;
+}
+
+.social--inst::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 21px;
+  top: 29px;
+  left: 29px;
+  background: url("../img/inst-icon.png") no-repeat;
+}
+
+.main-footer__discount {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.main-footer__promo {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }

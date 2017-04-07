@@ -4,5 +4,11 @@
     "windows": {
         "command": "explorer.exe"
     },
+<<<<<<< HEAD
     "args": ["index.html"]
+=======
+    "args": [
+        "${file}"
+    ]
+>>>>>>> 1b3d0266b5c6689514ff0b2d012b412d75a17ac8
 }
