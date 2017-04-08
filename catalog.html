@@ -41,7 +41,8 @@
         <h1 class="main-header__title">Магазин готовых шаблонов</h1>
       </header>
     </div>
-    <main class="main-catalog">
+    <main class="main-catalog center catalog-flex">
+      <div class="center catalog-flex">
       <aside class="filter">
         <section class="range-select">
           <p class="catalog__title">Стоимость</p>
@@ -62,35 +63,36 @@
         </section>
         <section class="grid-select">
           <p class="catalog__title">Сетка</p>
-          <input type="radio" id="grid-adaptive" name="grid-toggle" checked>
+          <input type="radio" id="grid-adaptive" class="grid-adaptive" name="grid-toggle" checked>
           <label for="grid-adaptive">Адаптивная</label>
-          <input type="radio" id="grid-fixed" name="grid-toggle">
+          <input type="radio" id="grid-fixed" class="grid-fixed"name="grid-toggle">
           <label for="grid-fixed">Фиксированная</label>
-          <input type="radio" id="grid-flow" name="grid-toggle">
+          <input type="radio" id="grid-flow" class="grid-flow" name="grid-toggle">
           <label for="grid-flow">Резиновая</label>
         </section>
         <section class="feature-select">
           <p class="catalog__title">Особенности</p>
-          <input type="checkbox" id="feature-slider" checked>
+          <input type="checkbox" id="feature-slider" class="feature-slider" checked>
           <label for="feature-slider">Слайдер</label>
-          <input type="checkbox" id="feature-point">
+          <input type="checkbox" id="feature-point" class="feature-point">
           <label for="feature-point">Блок преимуществ</label>
-          <input type="checkbox" id="feature-news" checked>
+          <input type="checkbox" id="feature-news" class="feature-news" checked>
           <label for="feature-news">Новости</label>
-          <input type="checkbox" id="feature-gallery">
+          <input type="checkbox" id="feature-gallery" class="feature-gallery">
           <label for="feature-gallery">Галерея</label>
-          <input type="checkbox" id="feature-basket">
+          <input type="checkbox" id="feature-basket" class="feature-basket">
           <label for="feature-basket">Корзина</label>
         </section>
-        <button class="flider-show btn btn--grey">Показать</button>
+        <a href="#" class="filter-show btn">Показать</a>
       </aside>
+      <section class="catalog-content">
       <p class="catalog__title">Сортировать</p>
       <ul class="catalog-sort">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
-        <li><a href="#" class="sort-updown">по убыванию</a></li>
-        <li><a href="#" class="sort-updown">по возрастанию</a></li>
+        <li><a href="#" class="sort-price">По цене</a></li>
+        <li><a href="#" class="sort-type sort-noactive">По типу</a></li>
+        <li><a href="#" class="sort-name sort-noactive">По названию</a></li>
+        <li><a href="#" class="sort-updown sort-up">по убыванию</a></li>
+        <li><a href="#" class="sort-updown sort-down sort-noactive">по возрастанию</a></li>
       </ul>
       <section class="catalog-preview">
         <div class="catalog-preview__elem catalog-preview__elem--sedona">
@@ -112,6 +114,7 @@
           <img src="img/beer.jpg" alt="beer" width="360" height="616">
         </div>
       </section>
+      
       <section class="catalog-page">
         <ul>
           <li><a href="#" class="page-btn page-btn--active">1</a></li>
@@ -120,6 +123,44 @@
           <li><a href="#" class="page-btn page-next">следующая</a></li>
         </ul>
       </section>
+      </section>
+      </div>
+      <section class="main-index__map">
+          <div class="js-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1491416997562"
+              width="1440" height="416" style="border:0" allowfullscreen></iframe>
+          </div>
+          <img src="img/nerds-map.jpg" alt="">
+          <div class="main-index__where">
+            <p>NЁRDS DESIGN STUDIO</p>
+            <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#" class="btn btn--red bnt-feedback">Напишите нам</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="center flex">
+        <section class="main-footer__social">
+          <ul>
+            <li>
+              <a href="#" class="social--vk">vkontakte</a>
+            </li>
+            <li>
+              <a href="#" class="social--fb">facebook</a>
+            </li>
+            <li>
+              <a href="#" class="social--inst">instagram</a>
+            </li>
+          </ul>
+        </section>
+        <section class="main-footer__discount">
+          <p class="main-footer__promo">Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+    </footer>
     </main>
   </body>
 
