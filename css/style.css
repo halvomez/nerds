@@ -447,3 +447,20 @@ body {
   text-align: center;
   padding-bottom: 60px;
 }
+
+.catalog-preview {
+  outline: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  min-height: 1925px;
+  width: 760px;
+}
+
+.catalog-preview__elem {
+  width: 360px;
+  height: 616px;
+}
+
+
