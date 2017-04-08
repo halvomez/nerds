@@ -440,6 +440,7 @@ body {
   padding: 0;
 }
 
+
 /*стили для внутренней станицы"*/
 
 .main-header__title {
@@ -503,4 +504,71 @@ a.page-btn--active {
 a.page-next {
   min-width: 260px;
   padding-left: 78px;
+}
+
+.range-select {
+  outline: 1px solid blue;
+  width: 260px;
+  min-height: 205px;
+  display: flex;
+  flex-direction: column;
+}
+
+.range-block {
+  background-color: #eeeeee;
+  height: 80px;
+  display: flex;
+}
+
+.range-block__line {
+  width: 220px;
+  height: 2px;
+  background-color: #d7dcde;
+  margin: auto;
+}
+
+.range-block__line--green {
+  position: relative;
+  height: 100%;
+  width: 162px;
+  background-color: #00ca74;
+}
+
+.range-block__line--green::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  background: url("../img/slider-round.png") no-repeat;
+  left: 0;
+  top: -10px;
+}
+
+.range-block__line--green::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  background: url("../img/slider-round.png") no-repeat;
+  right: 0;
+  top: -10px;
+}
+
+.range-number {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.range-number input[type="text"] {
+  box-sizing: border-box;
+  padding: 10px 16px;
+  width: 80px;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.range-number label {
+  margin-right: 10px;
 }

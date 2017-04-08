@@ -51,13 +51,17 @@
             </div>
           </div>
           <div class="range-number">
-            <label for="min-price">От</label>
-            <input type="text" id="min-price" name="min-price" value="0">
-            <label for="max-price">До</label>
-            <input type="text" id="max-price" name="max-price" value="15000">
+            <div class="range-number__min-price"><label for="min-price">От</label>
+              <input type="text" id="min-price" name="min-price" value="0">
+            </div>
+            <div class="range-number__max-price">
+              <label for="max-price">До</label>
+              <input type="text" id="max-price" name="max-price" value="15000">
+            </div>
           </div>
         </section>
         <section class="grid-select">
+          <p class="catalog__title">Сетка</p>
           <input type="radio" id="grid-adaptive" name="grid-toggle" checked>
           <label for="grid-adaptive">Адаптивная</label>
           <input type="radio" id="grid-fixed" name="grid-toggle">
@@ -66,6 +70,7 @@
           <label for="grid-flow">Резиновая</label>
         </section>
         <section class="feature-select">
+          <p class="catalog__title">Особенности</p>
           <input type="checkbox" id="feature-slider" checked>
           <label for="feature-slider">Слайдер</label>
           <input type="checkbox" id="feature-point">
