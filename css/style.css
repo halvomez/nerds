@@ -180,7 +180,6 @@ body {
   padding: 17px 53px 15px;
   text-decoration: none;
   background-color: grey;
-  align-self: flex-start;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -789,6 +788,47 @@ border-radius: 2px;
 }
 
 .catalog-preview__elem {
+  position: relative;
   width: 360px;
   height: 616px;
+}
+
+
+.catalog-preview-hover {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  min-height: 232px;
+  bottom: 0;
+  left: 0;
+  background-color: #eeeeee;
+}
+
+.catalog-preview-hover p {
+  margin: 0;
+  padding: 0;
+}
+
+p.catalog-preview-hover__title {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 32px;
+  margin-bottom: 30px;
+}
+
+p.catalog-preview-hover__info {
+  width: 230px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 28px;
 }
