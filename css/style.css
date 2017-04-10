@@ -424,6 +424,18 @@ body {
   align-items: center;
 }
 
+.main-index__project img {
+  opacity: 0.2;
+}
+
+.main-index__project img:hover {
+  opacity: 1;
+}
+
+.main-index__project img:active {
+  opacity: 0.1;
+}
+
 .main-index__map {
   position: relative;
 }
