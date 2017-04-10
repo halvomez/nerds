@@ -738,7 +738,17 @@ a.page-next {
 .grid-select label {
   padding-left: 38px;
   position: relative;
+  color: #50595e;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
+
+.grid-select label:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
 
 .grid-select label::before {
   content: "";
@@ -748,8 +758,9 @@ a.page-next {
   height: 26px;
   top: -3px;
   left: 0;
-  border: 3px solid #b8b8b8;
+  border: 3px solid #4d4d4d;
   border-radius: 50%;
+  opacity: 0.4;
 }
 
 .grid-select label::after {
@@ -760,9 +771,43 @@ a.page-next {
   height: 8px;
   top: 6px;
   left: 9px;
-  background-color: #b8b8b8;
+  background-color: #4d4d4d;
   border-radius: 50%;
   display: none;
+  opacity: 0.4;
+}
+
+
+.grid-select label:hover::after,
+.grid-select label:hover::before {
+  opacity: 1;
+}
+
+.grid-fixed:disabled ~ label[for="grid-fixed"]::after,
+.grid-fixed:disabled ~ label[for="grid-fixed"]::before {
+  opacity: 0.1;
+}
+
+.grid-fixed:disabled ~ label[for="grid-fixed"] {
+  color: #e2e5e7;
+}
+
+.grid-adaptive:disabled ~ label[for="grid-adaptive"]::after,
+.grid-adaptive:disabled ~ label[for="grid-adaptive"]::before {
+  opacity: 0.1;
+}
+
+.grid-adaptive:disabled ~ label[for="grid-adaptive"]{
+  color: #e2e5e7;
+}
+
+.grid-flow:disabled ~ label[for="grid-flow"]::after,
+.grid-flow:disabled ~ label[for="grid-flow"]::before {
+  opacity: 0.1;
+}
+
+.grid-flow:disabled ~ label[for="grid-flow"] {
+  color: #e2e5e7;
 }
 
 .grid-select .grid-adaptive:checked~label[for="grid-adaptive"]::after {
