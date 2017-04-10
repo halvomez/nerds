@@ -256,6 +256,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 500px;
+  border-radius: 2px;
 }
 
 
@@ -460,6 +461,7 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 55px;
+  padding-bottom: 50px;
   background-color: #ffffff;
   top: 54px;
   left: 0;
@@ -487,8 +489,7 @@ body {
   margin-bottom: 37px;
 }
 
-.main-index__where a {
-  margin-bottom: 47px;
+.bnt-feedback {
   padding-left: 45px;
   padding-right: 45px;
 }
