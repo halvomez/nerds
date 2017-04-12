@@ -988,23 +988,40 @@ a.page-next {
   font-weight: 500px;
   text-decoration: none;
   text-transform: uppercase;
+  opacity: 0.3;
 }
 
-.catalog-sort .sort-updown {
+.catalog-sort a:hover {
+  opacity: 0.6;
+}
+
+.catalog-sort a:active,
+.catalog-sort a:focus {
+  opacity: 1;
+}
+
+a.sort-updown {
   display: block;
   font-size: 0;
   background: url("../img/sort-icon.png") no-repeat;
   width: 9px;
   height: 9px;
+  opacity: 0.2;
+}
+
+a.sort-updown:hover {
+  opacity: 0.4;
+}
+
+a.sort-updown:active,
+a.sort-updown:focus {
+  opacity: 1;
 }
 
 .sort-down {
   transform: rotate(180deg);
 }
 
-.sort-noactive {
-  opacity: 0.2;
-}
 
 .catalog-preview {
   display: flex;
