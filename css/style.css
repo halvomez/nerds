@@ -632,6 +632,17 @@ a.page-btn--active {
   border: 2px solid #eeeeee;
 }
 
+a.page-btn:hover,
+.page-next:active {
+  background-color: #dfdfdf;
+}
+
+a.page-btn:active,
+.page-next:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 a.page-next {
   min-width: 260px;
   padding-left: 78px;
