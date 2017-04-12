@@ -689,6 +689,7 @@ a.page-next {
   background: url("../img/slider-round.png") no-repeat;
   left: 0;
   top: -10px;
+  cursor: pointer;
 }
 
 .range-block__line--green::before {
@@ -699,6 +700,7 @@ a.page-next {
   background: url("../img/slider-round.png") no-repeat;
   right: 0;
   top: -10px;
+  cursor: pointer;
 }
 
 .range-number {

@@ -43,7 +43,7 @@
     </div>
     <main class="main-catalog center catalog-flex">
       <div class="center catalog-flex">
-        <aside class="filter">
+        <form action="/form" method="post" class="filter" name="filter-form">
           <section class="range-select">
             <p class="catalog__title">Стоимость</p>
             <div class="range-block">
@@ -83,8 +83,8 @@
             <input type="checkbox" id="feature-basket" class="feature-basket">
             <label for="feature-basket">Корзина</label>
           </section>
-          <a href="#" class="filter-show btn">Показать</a>
-        </aside>
+          <button type="submit" class="filter-show btn">Показать</button>
+        </form>
         <section class="catalog-content">
           <p class="catalog__title">Сортировать</p>
           <ul class="catalog-sort">
