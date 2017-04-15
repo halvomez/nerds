@@ -1054,6 +1054,7 @@ a.sort-updown:focus {
 }
 .catalog-preview__elem:hover {
   box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+  cursor: pointer;
 }
 
 .catalog-preview__elem:hover::before {
@@ -1081,7 +1082,7 @@ a.sort-updown:focus {
   padding: 0;
 }
 
-p.catalog-preview-hover__title {
+a.catalog-preview-hover__title {
   width: 100%;
   text-align: center;
   font-size: 18px;
@@ -1090,6 +1091,8 @@ p.catalog-preview-hover__title {
   text-transform: uppercase;
   margin-top: 32px;
   margin-bottom: 30px;
+  text-decoration: none;
+  color: #000000;
 }
 
 p.catalog-preview-hover__info {
@@ -1102,6 +1105,6 @@ p.catalog-preview-hover__info {
   margin-bottom: 28px;
 }
 
-.catalog-preview-hover--visible {
+.catalog-preview__elem:hover > .catalog-preview-hover {
   display: flex;
 }
