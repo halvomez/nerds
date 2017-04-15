@@ -1035,7 +1035,11 @@ a.sort-updown:focus {
 .catalog-preview__elem {
   position: relative;
   width: 360px;
-  height: 616px;
+  height: 615px;
+}
+
+.catalog-preview__elem img {
+  margin-top: 40px;
 }
 
 .catalog-preview__elem:before {
@@ -1070,6 +1074,8 @@ a.sort-updown:focus {
   display: none;
 }
 
+
+
 .catalog-preview-hover p {
   margin: 0;
   padding: 0;
@@ -1094,4 +1100,8 @@ p.catalog-preview-hover__info {
   font-weight: 400;
   color: #666666;
   margin-bottom: 28px;
+}
+
+.catalog-preview-hover--visible {
+  display: flex;
 }
