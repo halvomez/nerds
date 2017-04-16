@@ -575,6 +575,112 @@ body {
   padding: 0;
 }
 
+.write-us {
+  position: fixed;
+  left: 50%;
+  bottom: 200px;
+  margin-left: -480px;
+  box-sizing: border-box;
+  width: 960px;
+  min-height: 590px;
+  padding: 65px 100px 85px;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  background-color: #ffffff;
+}
+
+.write-us__close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 78px;
+  right: 90px;
+  background: url(../img/write-us-close.png) no-repeat;
+  opacity: 0.3;
+  font-size: 0;
+}
+
+.write-us__close:hover {
+  opacity: 1;
+}
+
+.write-us__close:active {
+  opacity: 0.1;
+}
+
+.write-us__form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.write-us__info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.write-us__info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.write-us__title {
+  margin: 0;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.write-us label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.write-us input[type="text"] {
+  box-sizing: border-box;
+  height: 50px;
+  width: 360px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.write-us__form textarea {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  height: 118px;
+  border: 0;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  resize: none;
+  margin-bottom: 48px;
+}
+
+.btn-write-us {
+  padding-left: 80px;
+  padding-right: 80px;
+  border: none;
+}
+
 
 /*стили для внутренней станицы"*/
 
@@ -1052,6 +1158,7 @@ a.sort-updown:focus {
   background: url(../img/browser.png) no-repeat;
   opacity: 0.12;
 }
+
 .catalog-preview__elem:hover {
   box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
   cursor: pointer;
@@ -1074,8 +1181,6 @@ a.sort-updown:focus {
   background-color: #eeeeee;
   display: none;
 }
-
-
 
 .catalog-preview-hover p {
   margin: 0;
@@ -1105,6 +1210,6 @@ p.catalog-preview-hover__info {
   margin-bottom: 28px;
 }
 
-.catalog-preview__elem:hover > .catalog-preview-hover {
+.catalog-preview__elem:hover>.catalog-preview-hover {
   display: flex;
 }
